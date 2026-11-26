@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudySphere | Student Productivity Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><span class="brand-icon">✦</span><div><strong>StudySphere</strong><small>Student Productivity Hub</small></div></div>
+      <nav>
+        <button class="nav-link active" data-page="dashboard">▦ <span>Dashboard</span></button>
+        <button class="nav-link" data-page="tasks">☑ <span>My Tasks</span></button>
+        <button class="nav-link" data-page="planner">▤ <span>Study Planner</span></button>
+        <button class="nav-link" data-page="notes">▧ <span>My Notes</span></button>
+        <button class="nav-link" data-page="timer">◷ <span>Focus Timer</span></button>
+      </nav>
+      <div class="sidebar-bottom"><div class="tip-icon">☀</div><strong>Small steps every day.</strong><p>Build a little progress, one task at a time.</p></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+        <div><span class="eyebrow">YOUR PERSONAL STUDY SPACE</span><h1 id="pageTitle">Dashboard</h1></div>
+        <div class="date-pill" id="todayDate"></div>
+      </header>
+
+      <section class="page active" id="dashboardPage">
+        <div class="welcome-card">
+          <div><span class="eyebrow light">WELCOME TO YOUR WORKSPACE</span><h2>Make today count. <span>✦</span></h2><p>Plan your work, focus on what matters, and celebrate your progress.</p><button class="primary-btn" data-go="tasks">View my tasks <span>→</span></button></div>
+          <div class="quick-focus-card">
+            <span class="quick-focus-label">QUICK FOCUS TIMER</span>
+            <strong id="dashboardTimerDisplay">25:00</strong>
+            <span class="quick-focus-caption">A little focus goes a long way</span>
+            <button type="button" class="quick-focus-btn" id="dashboardTimerButton">▶ Start focus</button>
+          </div>
+        </div>
+        <div class="stats-grid">
+          <article class="stat-card"><div class="stat-icon purple">☑</div><span>Total tasks</span><strong id="totalTasks">0</strong><small>Tasks in your list</small></article>
+          <article class="stat-card"><div class="stat-icon green">✓</div><span>Completed</span><strong id="completedTasks">0</strong><small>Good work so far</small></article>
+          <article class="stat-card"><div class="stat-icon orange">◷</div><span>Focus sessions</span><strong id="focusSessions">0</strong><small>Sessions completed</small></article>
+        </div>
+        <div class="content-grid">
+          <article class="panel"><div class="panel-heading"><div><h3>Today's tasks</h3><p>A quick look at what you need to do</p></div><button class="text-btn" data-go="tasks">See all →</button></div><div id="dashboardTaskList" class="mini-task-list"></div></article>
+          <article class="panel progress-panel"><div class="panel-heading"><div><h3>Your progress</h3><p>Completed tasks so far</p></div></div><div class="progress-ring" id="progressRing"><div><strong id="progressPercent">0%</strong><small>completed</small></div></div><p class="progress-caption" id="progressCaption">Add a task to get started!</p></article>
+        </div>
+      </section>
+
+      <section class="page" id="tasksPage">
+        <div class="section-intro"><div><h2>My Tasks</h2><p>Keep track of assignments, goals and everyday work.</p></div></div>
+        <form id="taskForm" class="add-form"><input id="taskInput" type="text" maxlength="90" placeholder="e.g. Complete C programming assignment" required><select id="taskPriority"><option value="Normal">Normal</option><option value="High">High priority</option><option value="Low">Low priority</option></select><button class="primary-btn">+ Add task</button></form>
+        <div class="filter-row"><span id="taskCountLabel">All tasks</span><div><button class="filter-btn selected" data-filter="all">All</button><button class="filter-btn" data-filter="active">Active</button><button class="filter-btn" data-filter="completed">Completed</button></div></div>
+        <div class="panel"><div id="taskList" class="task-list"></div></div>
+      </section>
+
+      <section class="page" id="plannerPage">
+        <div class="section-intro"><div><h2>Study Planner</h2><p>Create a simple weekly study routine.</p></div></div>
+        <form id="planForm" class="add-form planner-form"><select id="planDay"><option>Monday</option><option>Tuesday</option><option>Wednesday</option><option>Thursday</option><option>Friday</option><option>Saturday</option><option>Sunday</option></select><input id="planSubject" type="text" placeholder="Subject or activity" maxlength="60" required><input id="planTime" type="time" required><button class="primary-btn">+ Add plan</button></form>
+        <div class="planner-grid" id="plannerList"></div>
+      </section>
+
+      <section class="page" id="notesPage">
+        <div class="section-intro"><div><h2>My Notes</h2><p>Save important ideas, reminders and study notes.</p></div></div>
+        <form id="noteForm" class="panel note-editor"><input id="noteTitle" type="text" maxlength="60" placeholder="Note title" required><textarea id="noteBody" rows="5" placeholder="Write your notes here..." required></textarea><button class="primary-btn">Save note</button></form>
+        <div class="notes-grid" id="notesList"></div>
+      </section>
+
+      <section class="page" id="timerPage">
+        <div class="section-intro"><div><h2>Focus Timer</h2><p>Try a 25-minute focus session followed by a short break.</p></div></div>
+        <div class="timer-panel panel">
+          <div class="timer-mode"><button class="mode-btn active" data-minutes="25">Focus · 25 min</button><button class="mode-btn" data-minutes="5">Short break · 5 min</button></div>
+          <div class="timer-circle"><div><strong id="timerDisplay">25:00</strong><span id="timerStatus">Ready to focus?</span></div></div>
+          <div class="timer-controls"><button class="primary-btn" id="startTimer">Start focus</button><button class="secondary-btn" id="resetTimer">Reset</button></div>
+          <p class="timer-hint">Tip: Put your phone away and focus on one task.</p>
+        </div>
+      </section>
+
+      <footer>Made for students, one focused day at a time. <span>StudySphere ✦</span></footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -22,7 +22,7 @@ A simple, student-friendly productivity website to organize study tasks, plan le
 <div align="center">
 
 ### Dashboard
-![StudySphere Dashboard](screenshots/dashboard.png)
+![StudySphere Dashboard](ss/aa.png)
 
 </div>
 

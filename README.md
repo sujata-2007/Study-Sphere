@@ -24,18 +24,6 @@ A simple, student-friendly productivity website to organize study tasks, plan le
 ### Dashboard
 ![StudySphere Dashboard](screenshots/dashboard.png)
 
-### My Tasks
-![StudySphere Tasks](screenshots/tasks.png)
-
-### Study Planner
-![StudySphere Study Planner](screenshots/planner.png)
-
-### My Notes
-![StudySphere Notes](screenshots/notes.png)
-
-### Focus Timer
-![StudySphere Focus Timer](screenshots/focus-timer.png)
-
 </div>
 
 ---

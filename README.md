@@ -86,19 +86,6 @@ Visit the live project here:
 
 👉 **https://study-sphere.gt.tc/**
 
-## 💻 Run Locally
-
-1. Clone this repository:
-
-   ```bash
-   git clone https://github.com/sujata-2007/Study-Sphere.git
-   ```
-
-2. Open the `Study-Sphere` folder.
-3. Open `index.html` in your browser.
-
-No installation is required for the basic website.
-
 ## 🗺️ Future Plans
 
 - Improve the design and user experience

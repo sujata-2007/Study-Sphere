@@ -1,68 +1,122 @@
+<div align="center">
 
-# 🎓 Study-Sphere — Student Productivity Hub
+# ✨ StudySphere
+### Student Productivity Hub
 
-A simple and user-friendly productivity website designed to help students organize their study routine, manage daily tasks, and stay focused on their academic goals.
+**Plan smarter. Study better. Stay focused.**
+
+A simple, student-friendly productivity website to organize study tasks, plan learning time, save notes, and build better study habits.
+
+<br>
+
+[🌐 **Visit Live Website**](https://study-sphere.gt.tc/)
+
+</div>
+
+---
+
+## 📸 Preview
+
+> Add your real website screenshots to the `screenshots` folder using the filenames below. GitHub will display them automatically.
+
+<div align="center">
+
+### Dashboard
+![StudySphere Dashboard](screenshots/dashboard.png)
+
+### My Tasks
+![StudySphere Tasks](screenshots/tasks.png)
+
+### Study Planner
+![StudySphere Study Planner](screenshots/planner.png)
+
+### My Notes
+![StudySphere Notes](screenshots/notes.png)
+
+### Focus Timer
+![StudySphere Focus Timer](screenshots/focus-timer.png)
+
+</div>
+
+---
 
 ## 🌟 About the Project
 
-Study-Sphere is my first web development project, created as a step toward learning and improving my coding skills.
+StudySphere is my first web development project, created as part of my learning journey as a first-year **B.Tech CSE (AI & ML)** student.
 
-The main goal of this project is to make student life more organized and productive through a simple digital platform.
+The idea behind StudySphere is to make everyday student life a little more organized. It brings useful study tools together in one place so students can manage their tasks and stay focused on their goals.
 
-## ✨ Features
+## 🚀 Features
 
-- 📚 Student-focused productivity interface
-- 📝 Manage daily study tasks
-- 🎯 Organize academic goals
-- 💻 Simple and user-friendly design
-- 🎨 Clean and attractive user interface
+- **Task Management** — add, complete, filter, and delete study tasks
+- **Study Planner** — organize study plans
+- **Quick Notes** — keep important study notes in one place
+- **Focus Timer** — use focused study sessions with a timer
+- **Progress Overview** — view productivity information from the dashboard
+- **Local Storage** — save your information in your browser
 
-## 🛠️ Technologies Used
+## 🧰 Built With
 
-- HTML5
-- CSS3
-- JavaScript
+| Technology | Purpose |
+|---|---|
+| HTML5 | Website structure |
+| CSS3 | Styling and responsive layout |
+| JavaScript | Interactivity and app features |
+| Browser Local Storage | Save data locally |
 
 ## 📂 Project Structure
 
 ```text
 Study-Sphere/
-│
 ├── index.html
 ├── style.css
 ├── script.js
+├── screenshots/
+│   ├── dashboard.png
+│   ├── tasks.png
+│   ├── planner.png
+│   ├── notes.png
+│   └── focus-timer.png
 └── README.md
 ```
 
-## 🚀 Getting Started
+## 🌐 Open the Website
 
-To run this project on your computer:
+Visit the live project here:
 
-1. Download or clone this repository.
-2. Open the project folder.
+👉 **https://study-sphere.gt.tc/**
+
+## 💻 Run Locally
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/sujata-2007/Study-Sphere.git
+   ```
+
+2. Open the `Study-Sphere` folder.
 3. Open `index.html` in your browser.
-4. Start exploring Study-Sphere!
 
-## 🎯 Project Goal
+No installation is required for the basic website.
 
-This project is part of my journey as a first-year B.Tech CSE (AI & ML) student.
+## 🗺️ Future Plans
 
-I built Study-Sphere to practice web development, understand how HTML, CSS, and JavaScript work together, and create something useful for students.
+- Improve the design and user experience
+- Add more student productivity tools
+- Explore a backend and database for cloud-based saving
+- Explore useful AI/ML features in a future version
 
-## 🔮 Future Improvements
-
-- Add more productivity features
-- Improve the user experience
-- Explore Machine Learning integration
-- Make the website more interactive
-
-## 👩‍💻 Developer
+## 👩‍💻 About the Developer
 
 **Sujata Biswas**  
-First-Year B.Tech CSE (AI & ML) Student
+First-year B.Tech CSE (AI & ML) student
+
+This is my first web development project. I built it to practise HTML, CSS, and JavaScript while creating something useful for students.
 
 ---
 
-⭐ If you like this project, feel free to explore the repository!
+<div align="center">
 
-*Learning, building, and improving one project at a time.* 💜
+**Made for students, one focused day at a time.** ✦
+
+</div>
